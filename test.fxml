@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
+	<children>
+		<AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
+			<children>
+				<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#026b02" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
+				<Text fill="WHITE" layoutX="35.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ShopSavvy" textAlignment="CENTER" wrappingWidth="152.9150193507237">
+               		<font>
+                  		<Font name="System Bold" size="20.0" />
+               		</font>
+           		</Text>
+          		<ImageView fitHeight="36.0" fitWidth="48.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         			<image>
+            			<Image url="@../assets/logo1.png" />
+         		</image>
+      			</ImageView>
+				<Button contentDisplay="CENTER" layoutX="640.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCheckout" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #ffffff; -fx-text-fill: #026b02;" text="Checkout">
+					<font>
+           		 		<Font name="System Bold" size="13.0" />
+         			</font>
+				</Button>
+				<Button contentDisplay="CENTER" layoutX="600.0" layoutY="10.0" mnemonicParsing="false" onAction="#displayCart" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+      				<ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../assets/logo.png" />
+							</image>
+					</ImageView>
+               </graphic>
+               </Button>
+				<Button layoutX="720.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-text-fill: #026b02;" text="Home">
+				<font>
+           		 		<Font name="System Bold" size="13.0" />
+         			</font>
+				</Button>
+				<ScrollPane layoutX="20.0" layoutY="105.0" prefHeight="488.0" prefWidth="750.0" style="-fx-background-color: #ffffff;">
+					<content>
+						<AnchorPane fx:id="my_item1" minHeight="0.0" minWidth="0.0" prefHeight="3221.0" prefWidth="792.0" style="-fx-background-color: #ffffff;">
+						<children>
+						     <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+								<Label fx:id="aisleLabel0" layoutX="360.0" layoutY="14.0" onDragDetected="#displayAisleLabel" text="CART" />
+								<Pane layoutX="30.0" layoutY="60.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+									    <TextField fx:id="prodNm0" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;"  />
+										<TextField fx:id="count0" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price0" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+      									<ImageView fx:id="img0" fitHeight="86.0" fitWidth="100.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                                 
+                            			</ImageView> 
+
+						</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="60.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img2" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                               </ImageView>
+										<TextField fx:id="prodNm2" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count2" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price2" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="600.0" layoutY="60.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img3" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm3" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count3" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price3" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Label fx:id="aisleLabel1" layoutX="360.0" layoutY="250.0" />
+								<Pane layoutX="30.0" layoutY="270.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img4" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" onDragDetected="#displayContent" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm4" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count4" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price4" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="270.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img5" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" onDragDetected="#displayCart" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm5" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count5" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price5" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="270.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img6" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm6" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count6" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price6" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="600.0" layoutY="270.0" onDragDetected="#displayCart" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img7" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm7" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count7" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price7" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Label fx:id="aisleLabel2" layoutX="360.0" layoutY="470.0" />
+								<Pane layoutX="30.0" layoutY="490.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img8" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm8" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count8" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price8" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="490.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img9" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm9" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count9" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price9" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="490.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img10" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm10" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count10" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price10" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="600.0" layoutY="490.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img11" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm11" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count11" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price11" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Label fx:id="aisleLabel3" layoutX="360.0" layoutY="660.0" />
+								<Pane layoutX="30.0" layoutY="680.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img12" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm12" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count12" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price12" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="680.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img13" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm13" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count13" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price13" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="680.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img14" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm14" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count14" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price14" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="600.0" layoutY="680.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img15" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm15" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count15" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price15" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Label fx:id="aisleLabel4" layoutX="360.0" layoutY="880.0" />
+								<Pane layoutX="30.0" layoutY="900.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img16" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm16" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count16" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price16" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="900.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img17" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm17" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count17" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price17" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="900.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img18" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm18" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count18" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price18" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="600.0" layoutY="900.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img19" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm19" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count19" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price19" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Label fx:id="aisleLabel5" layoutX="360.0" layoutY="1070.0" />
+								<Pane layoutX="600.0" layoutY="1090.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img20" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm20" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count20" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price20" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="30.0" layoutY="1090.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img21" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm21" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count21" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price21" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="1090.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img22" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm22" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count22" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price22" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="400.0" layoutY="1090.0" prefHeight="178.0" prefWidth="131.0">
+									<children>
+										<ImageView fx:id="img23" fitHeight="86.0" fitWidth="100.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm23" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count23" layoutX="41.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price23" layoutX="41.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="89.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ffffff;" />
+										<Button layoutX="6.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #ffffff;" />
+									</children>
+								</Pane>
+								<Pane layoutX="210.0" layoutY="60.0" prefHeight="125.0" prefWidth="117.0">
+									<children>
+										<ImageView fx:id="img1" fitHeight="86.0" fitWidth="100.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+										<TextField fx:id="prodNm1" layoutX="1.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="count1" layoutX="20.0" layoutY="125.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										<TextField fx:id="price1" layoutX="20.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #ffffff;" />
+										
+									</children>
+								</Pane>
+										
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

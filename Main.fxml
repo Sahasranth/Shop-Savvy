@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#026b02" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
+            <Text fill="WHITE" layoutX="35.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ShopSavvy" textAlignment="CENTER" wrappingWidth="152.9150193507237">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+          <ImageView fitHeight="36.0" fitWidth="48.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         		<image>
+            		<Image url="@../assets/logo1.png" />
+         		</image>
+      		</ImageView>
+            <TextField fx:id="Srch" layoutX="254.0" layoutY="10.0" prefHeight="28.0" prefWidth="224.0" promptText="Search everything at store" style="-fx-background-color: #ffffff;" />
+            <Button contentDisplay="CENTER" layoutX="480.0" layoutY="10.0" mnemonicParsing="false" onAction="#matchResults" prefHeight="23.0" prefWidth="68.0" style="-fx-background-color: white; -fx-text-fill: #026b02;" text="Search">
+            	<font>
+            		<Font name="System Bold" size="13.0" />
+         		</font>
+      		</Button>
+            <TabPane layoutY="106.0" prefHeight="485.0" prefWidth="792.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                  <Tab text="Clothing">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/clothing_polo.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/clothing_joggers.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/clothing_suit.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/clothing_shorts.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button0" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod0" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Men's polo'" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn0" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: ##dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button1" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod1" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Men's Shorts" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$17.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn1" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: ##dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button2" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod2" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Men's Suit" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$20.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button3" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod3" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Men's Joggers" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$17.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn2" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: ##dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn3" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: ##dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count0" layoutX="84.0" layoutY="149.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count1" layoutX="276.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count2" layoutX="467.0" layoutY="145.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count3" layoutX="649.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <Text layoutX="43.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$17.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                <Tab text="Shoes">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="44.0" layoutY="54.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/shoes_nike1.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/shoes_jordans.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/shoes_nike3.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/shoes_nike2.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button4" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod4" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nike Red Casual" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$68.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn4" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button5" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod5" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nike Blue Casual" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$45.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn5" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button6" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod6" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nike Runners" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$70.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                               <Button fx:id="btn6" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button7" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod7" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nike Jordans" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 2">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$120.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                             
+                              <Button fx:id="btn7" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: ##dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count4" layoutX="84.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count5" layoutX="276.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count6" layoutX="466.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count7" layoutX="649.0" layoutY="145.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Beauty">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/beauty_pouch.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/beauty_biotin.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/beauty_pencil.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/beauty_concealer.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button8" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod8" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Makeup Pouch" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$19.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn8" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button9" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod9" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Covergirl Concealer" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$14.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn9" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button10" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod10" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convergirl eyebrow pencil" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn10" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark grey;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button11" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod11" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biotin 2 pack" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 3">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$22.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                      
+                              <Button fx:id="btn11" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count8" layoutX="84.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count9" layoutX="276.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count10" layoutX="466.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count11" layoutX="651.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Sports">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/sports_cricket.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/sports_football.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/sports_basketball.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="47.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/sports_baseball.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button12" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod12" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kukaburra Cricket Bat" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 4">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$80.50">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="85.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn12" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button13" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod13" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baseball Kit" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 4">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$139.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="277.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn13" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button14" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod14" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basketball" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 4">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button15" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod15" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Football" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 4">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="467.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn14" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color:#dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="649.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn15" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark grey;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count12" layoutX="85.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count13" layoutX="276.0" layoutY="145.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count14" layoutX="466.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count15" layoutX="649.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Toys">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/toys_cinderella.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/toys_bear.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/toys_truck.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="39.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/toys_car1.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button16" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod16" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinderella Doll" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 5">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$30.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="85.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn16" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button17" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod17" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Red Vintage Car" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 5">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$10.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="277.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn17" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button18" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod18" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Truck" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 5">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$15.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button19" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod19" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teddy" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 5">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$25.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="467.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn18" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="649.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn19" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count16" layoutX="84.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count17" layoutX="276.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count18" layoutX="466.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count19" layoutX="648.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Health">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/health_tabs.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/health_machine.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/health_test.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/health_bandaid.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button20" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod20" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multivitamins" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$22.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="85.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn20" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button21" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod21" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Band-aid" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$17.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="277.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn21" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button22" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod22" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OneTouch Sugar" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$40.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button23" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod23" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weighing Manchine" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 6">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$10.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="467.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn22" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="649.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn23" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count20" layoutX="85.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count21" layoutX="277.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count22" layoutX="466.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count23" layoutX="648.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Vegetables">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/tomato.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/cucumber.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button24" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod24" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomato" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn24" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button25" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod25" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cucumber" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.97">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn25" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button26" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod26" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potato" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$2.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button27" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod27" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pumpkin" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn26" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn27" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count24" layoutX="84.0" layoutY="149.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count25" layoutX="276.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count26" layoutX="467.0" layoutY="145.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count27" layoutX="649.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <Text layoutX="43.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="98.0" fitWidth="126.0" layoutX="230.0" layoutY="45.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/tomato.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="575.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/pimpkin.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="389.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/potato.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Fruits">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/apple.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/cucumber.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button28" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod28" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apple" />
+                              <Text fill="#026b02" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 8">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn28" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button29" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod29" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banana" />
+                              <Text fill="#026b02" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1.89">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn29" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button30" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod30" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="watermelon" />
+                              <Text fill="#026b02" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button31" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #026b02;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod31" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grapes" />
+                              <Text fill="#026b02" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aisle 7">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btn30" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark grey;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn31" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #dark gray;" text="-" textFill="BLACK">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count28" layoutX="84.0" layoutY="149.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count29" layoutX="276.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count30" layoutX="467.0" layoutY="145.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count31" layoutX="649.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <Text layoutX="43.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$2.00">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="205.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/banana.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="403.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/watermelon.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="591.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/grapes.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Text fill="#026b02" layoutX="18.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Products">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button contentDisplay="CENTER" layoutX="640.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCheckout" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #ffffff; -fx-text-fill: #026b02;" text="Checkout">
+            	<font>
+           		 	<Font name="System Bold" size="13.0" />
+         		</font>
+      		</Button>
+            <Button contentDisplay="CENTER" layoutX="600.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCart" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="#026b02" layoutX="631.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="budgetValue" layoutX="707.0" layoutY="58.0" prefHeight="30.0" prefWidth="73.0" style="-fx-text-fill:#026b02;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="logoutBtn" layoutX="720.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: white; -fx-text-fill: #026b02;" text="Logout" textFill="#026b02">
+         		<font>
+            		<Font name="System Bold" size="13.0" />
+        		</font>
+      		</Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

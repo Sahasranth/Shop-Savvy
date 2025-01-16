@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController2">
+	<children>
+		<AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
+			<children>
+				<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#026b02" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
+				<Text fill="WHITE" layoutX="35.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ShopSavvy" textAlignment="CENTER" wrappingWidth="152.9150193507237">
+               		<font>
+                  		<Font name="System Bold" size="20.0" />
+               		</font>
+           		</Text>
+          		<ImageView fitHeight="36.0" fitWidth="48.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         			<image>
+            			<Image url="@../assets/logo1.png" />
+         		</image>
+      			</ImageView>
+				
+				<Button contentDisplay="CENTER" layoutX="640.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCheckout" prefHeight="26.0" prefWidth="76.0"  style="-fx-background-color: #ffffff; -fx-text-fill: #026b02;" text="Checkout">
+					<font>
+           		 		<Font name="System Bold" size="13.0" />
+         			</font>
+				</Button>
+				<Button contentDisplay="CENTER" layoutX="600.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCart" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: #ffffff;">
+					<graphic>
+						<ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../assets/logo.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+				
+				<Button contentDisplay="CENTER" layoutX="720.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="26.0" prefWidth="65.0"  style="-fx-background-color: #ffffff; -fx-text-fill: #026b02;" text="Home">
+					<font>
+           		 		<Font name="System Bold" size="13.0" />
+         			</font>
+				</Button>
+				<Pane layoutY="48.0" prefHeight="544.0" prefWidth="793.0" style="-fx-background-color: #ffffff;">
+					<children>
+						<Pane layoutX="10.0" layoutY="20.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image0" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price0" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle0" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name0" layoutY="134.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+
+								<TextField fx:id="count0" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button0" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn0" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+
+							</children>
+						</Pane>
+						<Pane layoutX="203.0" layoutY="20.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price1" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle1" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name1" layoutY="134.0" opacity="1.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count1" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button1" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn1" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="398.0" layoutY="20.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price2" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle2" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name2" layoutY="134.0" opacity="1.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count2" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button2" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn2" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="593.0" layoutY="20.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price3" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle3" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name3" layoutY="134.0" opacity="0.01" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count3" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button3" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn3" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="10.0" layoutY="250.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price4" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle4" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name4" layoutY="134.0" opacity="1.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count4" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button4" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn4" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="203.0" layoutY="250.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image5" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price5" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle5" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name5" layoutY="134.0" opacity="1.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count5" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button5" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn5" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="398.0" layoutY="250.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image6" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price6" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle6" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name6" layoutY="134.0" opacity="1.0" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count6" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button6" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn6" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+							</children>
+						</Pane>
+						<Pane layoutX="593.0" layoutY="250.0" prefHeight="231.0" prefWidth="150.0">
+							<children>
+								<ImageView fx:id="image7" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+								<TextField fx:id="price7" layoutY="193.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="aisle7" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" />
+								<TextField fx:id="name7" layoutY="134.0" opacity="0.03" prefHeight="63.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" />
+								<TextField fx:id="count7" layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="10.0" />
+									</font>
+								</TextField>
+								<Button fx:id="button7" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#buttonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								<Button fx:id="btn7" layoutX="86.0" layoutY="196.0" mnemonicParsing="false" onAction="#subtractButtonClick" style="-fx-background-color: #ffffff;">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Button>
+								
+							</children>
+						</Pane>
+					</children>
+				</Pane>
+            
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

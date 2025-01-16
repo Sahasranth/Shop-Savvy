@@ -1,0 +1,244 @@
+{
+	"aisles": [{
+			"number": "1",
+			"category": "Clothing",
+			"items": [{
+					"name": "Men's polo'",
+					"price": "17.99",
+					"image": "clothing_polo.jpeg",
+					"count": "23"
+					
+				},
+				{
+					"name": "Men's Shorts",
+					"price": "17.99",
+					"image": "clothing_shorts.jpeg",
+					"count": "5"
+				},
+				{
+					"name": "Men's Suit",
+					"price": "20.00",
+					"image": "clothing_suit.jpeg",
+					"count": "18"
+				},
+				{
+					"name": "Men's Joggers",
+					"price": "17.99",
+					"image": "clothing_joggers.jpeg",
+					"count": "12"
+				}
+			]
+		},
+		{
+			"number": "2",
+			"category": "Shoes",
+			"items": [{
+					"name": "Nike Red Casual",
+					"price": "68.99",
+					"image": "shoes_nike1.jpeg",
+					"count": "20"
+				},
+				{
+					"name": "Nike Blue Casual",
+					"price": "45.99",
+					"image": "shoes_nike2.jpeg",
+					"count": "16"
+				},
+				{
+					"name": "Nike Runners",
+					"price": "70.00",
+					"image": "shoes_nike3.jpeg",
+					"count": "14"
+				},
+				{
+					"name": "Nike Jordans",
+					"price": "120.00",
+					"image": "shoes_jordans.jpeg",
+					"count": "5"
+				}
+			]
+		},
+		{
+			"number": "3",
+			"category": "Beauty",
+			"items": [{
+					"name": "Makeup Pouch",
+					"price": "19.99",
+					"image": "beauty_pouch.jpeg",
+					"count": "8"
+				},
+				{
+					"name": "Covergirl Concealer",
+					"price": "14.99",
+					"image": "beauty_concealer.jpeg",
+					"count": "19"
+				},
+				{
+					"name": "Convergirl eyebrow pencil",
+					"price": "8.99",
+					"image": "beauty_pencil.jpeg",
+					"count": "7"
+				},
+				{
+					"name": "Biotin 2 pack",
+					"price": "22.99",
+					"image": "beauty_biotin.jpeg",
+					"count": "6"
+				}
+			]
+		},
+		{
+			"number": "4",
+			"category": "Sports",
+			"items": [{
+					"name": "Kukaburra Cricket Bat",
+					"price": "80.50",
+					"image": "sports_cricket.jpeg",
+					"count": "11"
+				},
+				{
+					"name": "Baseball Kit",
+					"price": "139.99",
+					"image": "sports_baseball.jpeg",
+					"count": "15"
+				},
+				{
+					"name": "Basketball",
+					"price": "12.99",
+					"image": "sports_basketball.jpeg",
+					"count": "22"
+				},
+				{
+					"name": "Football",
+					"price": "12.99",
+					"image": "sports_football.jpeg",
+					"count": "10"
+				}
+			]
+		},
+		{
+			"number": "5",
+			"category": "Toys",
+			"items": [{
+				"name": "Cinderella Doll",
+				"price": "30.00",
+				"image": "toys_cinderella",
+				"count": "9"
+			},
+			{
+				"name": "Red Vintage Car",
+				"price": "10.99",
+				"image": "toys_car1",
+				"count": "9"
+			},
+			{
+				"name": "Truck",
+				"price": "15.99",
+				"image": "toys_truck",
+				"count": "9"
+			},
+			{
+				"name": "Teddy",
+				"price": "25.00",
+				"image": "toys_bear",
+				"count": "9"
+			}
+
+		]
+		},
+		{
+			"number": "6",
+			"category": "Health",
+			"items": [{
+				"name": "Multivitamins",
+				"price": "22.99",
+				"image": "health_tabs.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Band-aid",
+				"price": "17.99",
+				"image": "health_bandaid.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "OneTouch Sugar",
+				"price": "40.00",
+				"image": "health_test.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Weighing Manchine",
+				"price": "10.00",
+				"image": "health_machine.jpeg",
+				"count": "2"
+			}
+
+		]
+		
+		},
+		{
+			"number": "7",
+			"category": "Vegetables",
+			"items": [{
+				"name": "Tomato",
+				"price": "3.99",
+				"image": "tomato.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Cucumber",
+				"price": "4.97",
+				"image": "cucumber.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Potato",
+				"price": "2.00",
+				"image": "potato.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Pumpkin",
+				"price": "5.00",
+				"image": "pimpkin.jpeg",
+				"count": "2"
+			}
+
+		]
+		
+		},
+		{
+			"number": "8",
+			"category": "Fruits",
+			"items": [{
+				"name": "Apple",
+				"price": "2.00",
+				"image": "apple.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Banana",
+				"price": "1.89",
+				"image": "banana.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "watermelon",
+				"price": "7.00",
+				"image": "watermelon.jpeg",
+				"count": "2"
+			},
+			{
+				"name": "Grapes",
+				"price": "5.00",
+				"image": "grapes.jpeg",
+				"count": "2"
+			}
+
+		]
+		
+		}
+		
+	]
+}
