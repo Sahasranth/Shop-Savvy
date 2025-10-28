@@ -52,6 +52,7 @@ Future Enhancements
 3. Include user accounts and purchase history for personalized recommendations.
 
 Conclusion
+
 Shop-Savvy successfully combines the convenience of digital shopping tools with the practicality of in-store shopping. By leveraging JavaFX for a user-friendly interface and OOP principles for robust design, the application enhances shopping efficiency, budget management, and overall user experience. With features like smart product search, aisle-based cart organization, and shopping list optimization, Shop-Savvy empowers users to shop smarter, save time, and make informed decisions.
 
 This project demonstrates how technology can bridge the gap between traditional and modern shopping, offering a practical solution for today’s busy shoppers while providing a foundation for future enhancements like barcode scanning, online integration, and personalized recommendations.
